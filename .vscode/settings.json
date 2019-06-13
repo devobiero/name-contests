@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "off",
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+}

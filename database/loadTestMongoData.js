@@ -19,7 +19,7 @@ MongoClient.connect(mongoConfig.url, (err, db) => {
       namesCount: 4,
       votesCount: 4
     }
-  ]).then(response => {
+  ]).then((response) => {
     console.log(response);
     db.close();
   });
