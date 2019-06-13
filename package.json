@@ -1,0 +1,35 @@
+{
+  "name": "name-contests-api",
+  "version": "1.0.0",
+  "description": "Name contests API",
+  "author": "George Obiero",
+  "license": "ISC",
+  "scripts": {
+    "start": "node lib/index",
+    "start:dev": "nodemon --exec node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devobiero/name-contests.git"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "bugs": {
+    "url": "https://github.com/devobiero/name-contests/issues"
+  },
+  "homepage": "https://github.com/devobiero/name-contests#readme",
+  "dependencies": {
+    "dataloader": "^1.4.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1",
+    "humps": "^2.0.1",
+    "lodash": "^4.17.11",
+    "mongodb": "^2.1.18",
+    "pg": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
