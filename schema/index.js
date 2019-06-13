@@ -17,7 +17,7 @@ const RootQueryType = new GraphQLObjectType({
             args: {
                 key: { type: new GraphQLNonNull(GraphQLString) }
             },
-            description: 'The current use identified by an api key',
+            description: 'The current user identified by an api key',
             resolve: (obj, args, { loaders }) => {
                 return loaders.usersByApiKeys.load(args.key);
             }
