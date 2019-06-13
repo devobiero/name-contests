@@ -37,6 +37,7 @@ module.exports = pgPool => ({
                 where name_id = ANY($1)`,
     [namesIds]).then(res => orderedFor(res.rows, namesIds, 'nameId', true));
   },
+
   addNewContest({ apiKey, title, description }) {
     return pgPool.query(`
                 insert into contests(code, title, description, created_by)
@@ -45,6 +46,7 @@ module.exports = pgPool => ({
                 returning *
             `, [slug(title), title, description, apiKey]).then(res => humps.camelizeKeys(res.rows[0]));
   },
+
   getActivitiesForUserIds(userIds) {
     return pgPool.query(`
                 select created_by, created_at, label, '' as title,
