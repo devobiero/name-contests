@@ -5,7 +5,7 @@
   "author": "George Obiero",
   "license": "ISC",
   "scripts": {
-    "start": "node lib/index",
+    "start": "node lib/index.js",
     "start:dev": "nodemon --exec node lib/index.js",
     "test": "mocha */*.spec.js --exit"
   },
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
