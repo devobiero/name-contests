@@ -2,6 +2,8 @@
 
 Run `yarn start:dev` to test
 
+Use `yarn start` in production setting
+
 ### Sample query and mutation
 ```
 
