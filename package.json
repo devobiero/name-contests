@@ -22,7 +22,7 @@
   "homepage": "https://github.com/devobiero/name-contests#readme",
   "dependencies": {
     "dataloader": "^1.4.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-graphql": "^0.8.0",
     "graphql": "^14.3.1",
     "humps": "^2.0.1",
